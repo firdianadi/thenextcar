@@ -1,0 +1,21 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="576">
+    <Grid HorizontalAlignment="Left" Width="576">
+        <Label Name="status" Content="" HorizontalAlignment="Left" Margin="12,384,0,0" VerticalAlignment="Top" Width="92"/>
+        <Button x:Name="startButton" Content="STOPED" HorizontalAlignment="Left" Margin="27,353,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.53,0.503" Width="62" Click="OnStartButtonClicked"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSE" HorizontalAlignment="Left" Margin="178,353,0,0" VerticalAlignment="Top" Width="66" Click="OnDoorOpenButtonCliked"/>
+        <Button x:Name="LockDoorButton" Content="LOCK" HorizontalAlignment="Left" Margin="324,353,0,0" VerticalAlignment="Top" Width="73" Click="OnLockDoorButtonClicked"/>
+        <Button x:Name="AccuButton" Content="OFF" HorizontalAlignment="Left" Margin="461,353,0,0" VerticalAlignment="Top" Width="59" Click="OnAccuButtonClicked"/>
+        <Label Name="DoorOpenState" Content="door is open" HorizontalAlignment="Left" Margin="170,384,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label Name="LockDoorState" Content="door unlocked" HorizontalAlignment="Left" Margin="314,384,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Name="AccuState" Content="no power" HorizontalAlignment="Left" Margin="455,384,0,0" VerticalAlignment="Top" Width="71"/>
+        <Image HorizontalAlignment="Left" Height="317" VerticalAlignment="Top" Width="552" Source="/Assets/navigation.jpg"/>
+
+    </Grid>
+</Window>
